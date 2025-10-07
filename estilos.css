@@ -1,0 +1,102 @@
+
+  /* Reset básico */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #021d1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    /* Nav General */
+    nav {
+      background-color: #8c9d96;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    /* Nav para a */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    /* Contenedor principal */
+    section {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; 
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Clases para estilo general */
+    .izquierda,
+    .central,
+    .derecha {
+      padding: 20px;
+      border-radius: 8px;
+      box-sizing: border-box;
+        
+    }
+
+    /* Estilo Sección izquierda */
+    .izquierda {
+      color: white;  
+      flex: 1;
+      background-color: rgba(11, 67, 54, 0.63);
+        
+    }
+
+    /* Sección central */
+    .central {
+      
+      flex: 2; 
+      background-color: #b7d7cd; 
+      box-shadow: 0 2px 5px #425857;
+    }
+
+    /* Sección derecha */
+    .derecha {
+      color: white;
+      flex: 1; 
+      background-color: #315a51ff; 
+    }
+
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #243831;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Diseño responsivo */
+    @media (max-width: 768px) {
+      .izquierda,
+      .central,
+      .derecha {
+        flex: 1 1 100%;
+        margin-bottom: 5px; /
+      
+        }
+    }
